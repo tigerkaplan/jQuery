@@ -307,3 +307,29 @@ btk_academia2(); */
 //     console.log("not deleted");
 // }
 
+// ***** Lesson 21 Object *****
+
+// var array=[];
+// console.log(array);
+
+var software={
+    //let=local 
+    html5:'semantic',
+    css3: 'box-shadow',
+    responsive: "media",
+    bootstrap4: "color",
+    javascript: "BOM",
+    java: ["servlet", "jsp","jsf", "spring"],
+    javaEE:{
+        jsf:"x",
+        jsp:"y",
+        servlet:"z",
+    }
+};
+// console.log()
+
+console.log(software.html5);
+console.log(software.responsive);
+console.log(software.java[1]);
+console.log(software.javaEE[1]);
+// console.log(software)

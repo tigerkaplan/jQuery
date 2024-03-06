@@ -277,7 +277,6 @@ btk_academia2(); */
 // console.log(newArray);
 // console.log(typeof newArray);
 
-
 // break   donguyu kirmak
 //return   method u kirmak
 //continue  sadece bu deger icin calisma sonrasinda devam et
@@ -299,7 +298,7 @@ btk_academia2(); */
 // ***** Lesson 20 BOM - Browser Object Model*****
 // console.log(window);
 // window.alert("screen");
-// // confirm 
+// // confirm
 // var clear=window.confirm("Are you sure you want to delete this");
 // if (clear){
 //     console.log("deleted");
@@ -312,24 +311,63 @@ btk_academia2(); */
 // var array=[];
 // console.log(array);
 
-var software={
-    //let=local 
-    html5:'semantic',
-    css3: 'box-shadow',
-    responsive: "media",
-    bootstrap4: "color",
-    javascript: "BOM",
-    java: ["servlet", "jsp","jsf", "spring"],
-    javaEE:{
-        jsf:"x",
-        jsp:"y",
-        servlet:"z",
-    }
-};
-// console.log()
+// var software={
+//     //let=local
+//     html5:'semantic',
+//     css3: 'box-shadow',
+//     responsive: "media",
+//     bootstrap4: "color",
+//     javascript: "BOM",
+//     java: ["servlet", "jsp","jsf", "spring"],
+//     javaEE:{
+//         jsf:"x",
+//         jsp:"y",
+//         servlet:"z",
+//     }
+// };
+// // console.log()
 
-console.log(software.html5);
-console.log(software.responsive);
-console.log(software.java[1]);
-console.log(software.javaEE[1]);
-// console.log(software)
+// console.log(software.html5);
+// console.log(software.responsive);
+// console.log(software.java[1]);
+// console.log(software.javaEE[1]);
+// // console.log(software)
+
+// ***** Lesson 22 Functions *****
+
+// // function without parameters
+// function test() {
+//     console.log("function without parameters");
+// }
+
+// test();
+
+// function with parameters (1)
+// function test2(name) {
+//     return name;
+// }
+
+// var name=test2("Husniye");
+// console.log(name);
+
+// function with parameters (n)
+// function test3(name, surname) {
+//     return name + " " + surname;
+// }
+
+// var nameSurname = test3("Husniye", "Erparun");
+// console.log(nameSurname);
+
+// //function without name
+// let nonameFunction = function() {
+//     console.log("function without name");
+// };
+
+// nonameFunction();
+
+//without name arrowFunction
+let nonameArrowFunction = () => {
+    console.log("without name arrowFunction");
+};
+
+nonameArrowFunction();

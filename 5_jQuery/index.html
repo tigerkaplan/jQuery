@@ -2,6 +2,7 @@
 <html lang="en">
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,52 @@
     <!-- Jquery -->
     <script src="/js/jquery-3.7.1.min.js"></script>
 </head>
+
 <body>
-    
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, exercitationem?</p>
+    <p id="idJquery"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, exercitationem?</p>
+    <p class="classJquery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, exercitationem?</p>
+
+    <button>Click Me !</button> -->
+
+    <P>tag</P>
+    <P id="idJquery">Id tag</P>
+    <P class="classJquery">class tag</P>
+    <ul>
+        <li>element1</li>
+        <li>element2</li>
+        <li>element3</li>
+    </ul>
+
+
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <br>
+    <br>
+    <button>Click tag</button>
+
+
+
+    <script>
+        /* $().action(); */
+        $("button").click(function () {
+            // $('p').hide();
+            // $('#idJquery').hide();
+            // $('.classJquery').hide();
+            // $("*").hide();
+            // $("ul li").hide();
+            // $("ul li:first").hide();
+            // $("ul li:first-child").hide();
+            // $("tr td").hide();
+            // $("tr:even").hide();
+            $("tr:odd").hide();
+        });
+    </script>
 </body>
+
 </html>

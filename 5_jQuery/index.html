@@ -9,9 +9,12 @@
     <title>Document</title>
     <!-- Jquery -->
     <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/a001Selectors.js"></script>
 </head>
 
 <body>
+
+    <!-- * Syntax Selector -->
     <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, exercitationem?</p>
     <p id="idJquery"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, exercitationem?</p>
     <p class="classJquery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, exercitationem?</p>
@@ -39,22 +42,32 @@
     <br>
     <button>Click tag</button>
 
+    <!-- * Document Ready -->
 
 
+
+
+    <!-- Javascript -->
     <script>
-        /* $().action(); */
-        $("button").click(function () {
-            // $('p').hide();
-            // $('#idJquery').hide();
-            // $('.classJquery').hide();
-            // $("*").hide();
-            // $("ul li").hide();
-            // $("ul li:first").hide();
-            // $("ul li:first-child").hide();
-            // $("tr td").hide();
-            // $("tr:even").hide();
-            $("tr:odd").hide();
-        });
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $().action(); 
+                // $("button").click(function () {
+                // $('p').hide();
+                // $('#idJquery').hide();
+                // $('.classJquery').hide();
+                // $("*").hide();
+                // $("ul li").hide();
+                // $("ul li:first").hide();
+                // $("ul li:first-child").hide();
+                // $("tr td").hide();
+                // $("tr:even").hide();
+                // $("tr:odd").hide();
+                // });
+            })
+        })
+
     </script>
 </body>
 

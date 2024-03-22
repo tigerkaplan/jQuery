@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <!-- JS -->
+
+  <style>
+    div {
+      height: 200px;
+      width: 200px;
+      background-color: blanchedalmond;
+      position: relative;
+      animation: variable 8s infinite;
+    }
+
+    div:hover{
+      box-shadow: 10px 10px 10px 10px greenyellow;
+    }
+
+    .addClassExample {
+    border: 20px solid black;
+  }
+
+    @keyframes variable {
+      from {left:0px} 
+      to {left: 250px}
+    }
+
+ 
+
+  </style>
+
+
+
+
+
+</head>
+
+<body>
+  <h2>addClass removeClass toggleClass</h2>
+  <div></div>
+  <script>
+    $(document).ready(function () {
+      // $("div").addClass("addClassExample");
+      // $("div").removeClass("addClassExample");
+      $("div").toggleClass("addClassExample");
+
+      
+    });
+  </script>
+</body>
+
+</html>

@@ -7,25 +7,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script> -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
-  <!-- <img id="photo" name="photo" src="../images/C1.jpg" alt="no photo"> -->
+  <form>
+    <input type="text" id="name" name="name">
+    <input type="text" id="surname" name="surname">
+    <button type="submit" id="send" name="send" onclick="onlineRegister()">Register</button>
+  </form>
 
-<p id="textId">Previous</p>
 
   <script>
-    $(document).ready(function () {
-      // $("#photo").attr("width", "100").attr("height", "200");
-      $(document).ready(function () {
-        $("#textId").html("I changed the context <b>Lorem ipsum</b>")
-      })
 
-    });
-
+    function onlineRegister() {
+      var nameJquery = $("#name").val();
+      var surnameJquery = $("#surname").val();
+      alert("My name is " + nameJquery + " and my surname is "+ surnameJquery);
+    }
   </script>
 
 </body>

@@ -19,7 +19,8 @@
 <body>
 
   <div id="divClick" class="badge bg-secondary text-wrap" style="font-size: 24px;">Click me! !</div> <br>
-  <img src=".././content/image/C1.jpg" name="photo" id="photo" width="400" height="400" style="position: relative; left:15px"/>
+  <img src=".././content/image/C1.jpg" name="photo" id="photo" width="400" height="400"
+    style="position: relative; left:15px" />
 
   <div class="m-5" id="divId">
     <p id="pId">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, illo!
@@ -27,12 +28,15 @@
 
 
     <button class="btn btn-primary mt-5" id="show" name="send">Show</button>
-    <button class="btn btn-danger mt-5" id="hide" name="hide">Hide</button> <br />
+    <button class="btn btn-danger mt-5" id="hide" name="hide">Hide</button>
+    <button class="btn btn-dark mt-5" id="toggle" name="toggle">Toggle</button>
+    <br />
 
     <button class="btn btn-warning mt-5" id="fadeIn" name="fadeIn">FadeIn</button>
     <button class="btn btn-warning mt-5" id="fadeOut" name="fadeOut">FadeOut</button>
     <button class="btn btn-warning mt-5" id="fadeToggle" name="fadeToggle">FadeToggle</button>
-    <button class="btn btn-warning mt-5" id="fadeTo" name="fadeTo">FadeTo</button> <br>
+    <button class="btn btn-warning mt-5" id="fadeTo" name="fadeTo">FadeTo</button>
+    <br>
 
     <button class="btn btn-info mt-5" id="slideDown" name="slideDown">Slide Down</button>
     <button class="btn btn-info mt-5" id="slideUp" name="slideUp">Slide Up</button>
@@ -111,42 +115,43 @@
     });
   </script>
 
-<!-- Animate -->
-<script>
-  $(document).ready(function () {
-    $("#animate").click(function () {
-      $("#pId").animate({
-        width:200,
-        height:200,
-        opacity:.7,
-        left:40,
-        right:40
-      });
+  <!-- Animate -->
+  <script>
+    $(document).ready(function () {
+      $("#animate").click(function () {
+        $("#pId").animate({
+          width: 200,
+          height: 200,
+          opacity: .7,
+          left: 40,
+          right: 40
+        });
+      })
     })
-  })
-</script>
+  </script>
 
-<script>
-   $(document).ready(function () {
-    $("#divClick").click(function () {
-      $("#photo").animate({
-       left:"+=45",
-       height: 400,
-       opacity: .7
-      }, 3000, function name() {
-        alert("animation ended")
-      });
-    })
-  });
-</script>
+  <script>
+    $(document).ready(function () {
+      $("#divClick").click(function () {
+        $("#photo").animate({
+          left: "+=45",
+          height: 400,
+          opacity: .7
+        }, 3000, function name() {
+          alert("animation ended")
+        });
+      })
+    });
+  </script>
 
-<!-- Stop -->
-<script>
-  $(document).ready(function () {
-    $("#stop").click(function () {
-      $("#photo").stop();
+  <!-- Stop -->
+  <script>
+    $(document).ready(function () {
+      $("#stop").click(function () {
+        $("#photo").stop();
+      })
     })
-  })
-</script>
+  </script>
 </body>
+
 </html>

@@ -8,62 +8,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous">
-  </script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-      <!-- Bootstrap CSS v5.2.1 -->
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-        crossorigin="anonymous"
-      />
-    </head>
-
-  </html>
-  
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
-
-
 <body>
-
 
   <div class="m-5" id="divId">
     <p id="pId">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, illo!
     </p>
 
-    
     <button class="btn btn-primary mt-5" id="show" name="send" onclick="show()">Show</button>
-    <button class="btn btn-primary mt-5" id="hide" name="hide" onclick="hide()">Hide</button>
-    <button class="btn btn-primary mt-5" id="fade" name="fade" onclick="fade()">Fade</button>
-    <button class="btn btn-primary mt-5" id="slide" name="slide" onclick="slide()">Slide</button>
-    <button class="btn btn-primary mt-5" id="animate" name="animate" onclick="animate()">Animate</button>
-    <button class="btn btn-primary mt-5" id="stop" name="stop" onclick="stop()">Stop</button>
+    <button class="btn btn-danger mt-5" id="hide" name="hide" onclick="hide()">Hide</button> <br />
 
+    <button class="btn btn-warning mt-5" id="fadeIn" name="fadeIn" onclick="fadeIn()">FadeIn</button>
+    <button class="btn btn-warning mt-5" id="fadeOut" name="fadeOut" onclick="fadeOut()">FadeOut</button>
+    <button class="btn btn-warning mt-5" id="fadeToggle" name="fadeToggle" onclick="fadeToggle()">FadeToggle</button>
+    <button class="btn btn-warning mt-5" id="fadeTo" name="fadeTo" onclick="fadeTo()">FadeTo</button> <br>
+
+    <button class="btn btn-info mt-5" id="slide" name="slide" onclick="slide()">Slide</button> <br>
+    <button class="btn btn-dark mt-5" id="animate" name="animate" onclick="animate()">Animate</button>
+    <button class="btn btn-primary mt-5" id="stop" name="stop" onclick="stop()">Stop</button>
   </div>
 
-  
-
-
-
+  <!-- Show Hide -->
   <script>
-    function show () {
-      $(document).ready(function(){
-        $("#pId").show(2000, function(){alert("hidden")});
+    $(document).ready(function () {
+      $("#hide").click(function () {
+        $("#pId").hide(2000);
+      });
+
+      $("#show").click(function () {
+        $("#pId").show(2000, function () {
+          alert("show");
+        });
+      });
+
+      // $("#fade").click(function () {
+      //   $("#pId").fadeIn("slow");
+      // })
+    });
+  </script>
+
+  <!-- Fade -->
+  <script>
+    $(document).ready(function () {
+      $("#fadeIn").click(function () {
+        $("#pId").fadeIn(2000, function () {
+          alert("fadeIn")
+        });
+      });
+    })
+
+    $(document).ready(function () {
+      $("#fadeOut").click(function () {
+        $("#pId").fadeIn(2000, function () {
+          alert("fadeOut")
+        });
       })
-    }
-function hide() {
-  $(document).ready(function(){
-    // selector structure
-    $("#pId").hide(2000, function(){alert("hidden")});
-  })
-}
+    })
+    $(document).ready(function () {
+      $("#fadeToggle").click(function () {
+        $("#pId").fadeIn(2000, function () {
+          alert("fadeToggle")
+        });
+      })
+    });
+    $(document).ready(function () {
+      $("#fadeTo").click(function () {
+        $("#pId").fadeIn(2000, function () {
+          alert("fadeTo")
+        });
+      })
+    });
   </script>
 
 </body>
-
 </html>

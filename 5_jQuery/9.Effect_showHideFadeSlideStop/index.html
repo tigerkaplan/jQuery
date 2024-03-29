@@ -18,6 +18,9 @@
 
 <body>
 
+  <div id="divClick" class="badge bg-secondary text-wrap" style="font-size: 24px;">Click me! !</div> <br>
+  <img src=".././content/image/C1.jpg" name="photo" id="photo" width="400" height="400" style="position: relative; left:15px"/>
+
   <div class="m-5" id="divId">
     <p id="pId">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, illo!
     </p>
@@ -83,7 +86,6 @@
         });
       });
     });
-
   </script>
 
 
@@ -109,7 +111,42 @@
     });
   </script>
 
+<!-- Animate -->
+<script>
+  $(document).ready(function () {
+    $("#animate").click(function () {
+      $("#pId").animate({
+        width:200,
+        height:200,
+        opacity:.7,
+        left:40,
+        right:40
+      });
+    })
+  })
+</script>
 
+<script>
+   $(document).ready(function () {
+    $("#divClick").click(function () {
+      $("#photo").animate({
+       left:"+=45",
+       height: 400,
+       opacity: .7
+      }, 3000, function name() {
+        alert("animation ended")
+      });
+    })
+  });
+</script>
+
+<!-- Stop -->
+<script>
+  $(document).ready(function () {
+    $("#stop").click(function () {
+      $("#photo").stop();
+    })
+  })
+</script>
 </body>
-
 </html>
